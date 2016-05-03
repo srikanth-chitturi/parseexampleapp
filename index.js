@@ -7,6 +7,10 @@ var path = require('path');
 
 var databaseUri = 'mongodb://user1:user1@ds013212.mlab.com:13212/parse';
 
+if (process.env.NODE_ENV === 'production') {
+    serverUrl = 'https://parseapp123.herokuapp.com/parse';
+}
+
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
@@ -16,7 +20,7 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'ZaXFJZXsnkF81ngrDsL4LP12I2MP5yPMRgDojhNM',
   masterKey: process.env.MASTER_KEY || 'gWKNK6fNSKH7JVTAwMfbkwzgFAPpQcBr2rTE4o2E', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  serverURL: serverUrl || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
