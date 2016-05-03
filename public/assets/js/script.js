@@ -1,6 +1,3 @@
-/**
- *  Steps handler
- */
 
 var Steps = {}
 
@@ -131,16 +128,16 @@ XHR.setCallback = function(callback) {
 }
 
 XHR.POST = function(path, callback) {
-  var seed = {"score":1337,"playerName":"Sean Plott","cheatMode":false}
+  var seed = {"score":1337,"playerName":"Srikanth Chitturi","cheatMode":false}
   this.xhttp.open("POST", Config.getUrl() + path, true);
-  this.xhttp.setRequestHeader("X-Parse-Application-Id", "ZaXFJZXsnkF81ngrDsL4LP12I2MP5yPMRgDojhNM");
+  this.xhttp.setRequestHeader("X-Parse-Application-Id", "N7iEd4UsrBfExFr00uAUiFoBrsVEeWNsgJDyPJno");
   this.xhttp.setRequestHeader("Content-type", "application/json");
   this.xhttp.send(JSON.stringify(seed));
 }
 
 XHR.GET = function(path, callback) {
   this.xhttp.open("GET", Config.getUrl() + path + '/' + Store.objectId, true);
-  this.xhttp.setRequestHeader("X-Parse-Application-Id", "ZaXFJZXsnkF81ngrDsL4LP12I2MP5yPMRgDojhNM");
+  this.xhttp.setRequestHeader("X-Parse-Application-Id", "N7iEd4UsrBfExFr00uAUiFoBrsVEeWNsgJDyPJno");
   this.xhttp.setRequestHeader("Content-type", "application/json");
   this.xhttp.send(null);
 }

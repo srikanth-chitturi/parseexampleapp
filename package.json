@@ -1,11 +1,11 @@
 {
-  "name": "parse-server-example",
-  "version": "1.4.0",
-  "description": "An example Parse API server using the parse-server module",
+  "name": "parse-example",
+  "version": "1.0.0",
+  "description": "Parse Test",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ParsePlatform/parse-server-example"
+    "url": "https://github.com/srikanth-chitturi/parseexampleapp.git"
   },
   "license": "MIT",
   "dependencies": {

@@ -8,27 +8,16 @@
 
   <body>
     <div class="container">
-      <div class="align-center">
-        <img id="parse-logo" src="/public/assets/images/parse-logo.png">
-      </div>
-
-      <div class="advice">
-        <p><strong>Hi</strong>! We've prepared a small 3-steps page to assist you testing your local Parse server.</p>
-        <p>These first steps will help you run and test the Parse server locally and were referrenced by the <a href="https://github.com/ParsePlatform/parse-server/wiki/Migrating-an-Existing-Parse-App">migration guide</a> provided by <a href="https://github.com/ParsePlatform/">Parse Platform</a>.</p>
-      </div>
-
-      <p class="up-and-running">Looks like our local Parse Serve is running under <span id="parse-url">...</span>. Let’s test it? </p>
-
+      
+      
       <p>We have an express server with Parse server running on top of it connected to a MongoDB.</p>
-
-      <p>The following steps will try to save some data on parse server and then fetch it back. Hey ho?</p>
 
       <div id="step-1" class="pure-g step--container">
         <div class="pure-u-1-5 align-center">
           <span class="step--number">1</a>
         </div>
         <div class="pure-u-4-5">
-          <p class="step--info">Post data to local parse server:</p>
+          <p class="step--info">Post data to parse server:</p>
           <div class="pure-g">
             <div class="pure-u-1-5">
               <a href="#" id="step-1-btn" class="step--action-btn">Post</a>
@@ -46,7 +35,7 @@
           <span class="step--number">2</a>
         </div>
         <div class="pure-u-4-5">
-          <p class="step--info">Fetch data from local parse server:</p>
+          <p class="step--info">Fetch data from parse server:</p>
           <div class="pure-g">
             <div class="pure-u-1-5">
               <a href="#" id="step-2-btn" class="step--action-btn">Fetch</a>
@@ -81,19 +70,10 @@
         </div>
         <div class="pure-u-4-5">
           <p id="local-parse-working">
-          Congrats! Our local Parse server is working. :)
+          Congrats! Our Parse server is working. :)
           </p>
         </div>
       </div>
-
-      <footer id="footer" class="align-center">
-        <ul>
-          <li><a href="https://parse.com" target="_blank">Parse.com</a></li>
-          <li><a href="https://parse.com/docs" target="_blank">Docs</a></li>
-          <li><a href="https://github.com/ParsePlatform/parse-server-example" target="_blank">Github</a></li>
-        </ul>
-      </footer>
-
     </div>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="/public/assets/js/script.js"></script>
