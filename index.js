@@ -86,6 +86,13 @@ app.post('/', function(req, res){
 
 });
 
+app.get('/logout',function(req,res){
+    console.log('logout');
+    sessionToken='';
+    res.redirect('/');
+});
+
+
 app.post('/signup', function(req, res){
   var userName = req.body.username;
   var password = req.body.password;
