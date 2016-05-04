@@ -54,7 +54,16 @@ app.use(mountPath, api);
 
 app.get('/', function(req, res) {
   //res.status(200).send('This is home page , go to test page');
-  res.sendFile(path.join(__dirname, '/public/index.html'));
+
+  if(sessionToken === '')
+  {
+     res.sendFile(path.join(__dirname, '/public/index.html')); 
+  }
+  else{
+     res.redirect('/test');
+  }
+
+  
 });
 
 
