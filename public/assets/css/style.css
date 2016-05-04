@@ -228,10 +228,12 @@ a:visited {
   list-style-type: none;
   display:inline-block;
 }
+
 #footer ul li:after {
   content: "-";
   padding: 10px;
 }
+
 #footer ul li:last-child:after {
   content: "";
 }
