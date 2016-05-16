@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'production') {
     serverUrl = 'https://parseapp123.herokuapp.com/parse';
 }
 else{
-    serverUrl = 'http://localhost:1337/parse'
+    serverUrl = 'https://localhost:1337/parse'
 }
 
 if (!databaseUri) {
