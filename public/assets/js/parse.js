@@ -4,7 +4,7 @@ $(function() {
 
 	// Replace this line with the one on your Quickstart Guide Page
 	Parse.initialize("N7iEd4UsrBfExFr00uAUiFoBrsVEeWNsgJDyPJno");
-	Parse.serverURL = 'https://parseapp123.herokuapp.com/parse'
+	Parse.serverURL = window.location.origin + '/parse';
 
 	
 	$('.form-signin').on('submit', function(e) {
